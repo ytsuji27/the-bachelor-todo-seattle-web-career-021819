@@ -43,11 +43,10 @@ end
 
 def get_average_age_for_season(data, season)
   ages = []
-  data[season].each do |contestant_array|
-    contestant_array.each do |attributes|
-      puts attributes["age"]
-    end
+  data[season].each do |contestants|
+    ages << contestants["age"].to_i
   end
+  ages
 #  ages.inject{ |sum, el| sum + el}
 #  (ages.inject{ |sum, el| sum + el }.to_i / ages.size).round
 end
