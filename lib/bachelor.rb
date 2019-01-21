@@ -47,5 +47,4 @@ def get_average_age_for_season(data, season)
     ages << contestants["age"].to_i
   end
   ages.inject{ |sum, el| sum + el } / ages.size
-  ages.size
 end
