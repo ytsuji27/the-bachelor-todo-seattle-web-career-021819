@@ -1,5 +1,12 @@
 def get_first_name_of_season_winner(data, season)
-  # code here
+  first_name = ""
+  data[season].each do |contestant|
+    if contestant[:status] == "Winner"
+      name = contestant[:name]
+      first_name = name.split[0]
+    end
+  end
+  first_name
 end
 
 def get_contestant_name(data, occupation)
