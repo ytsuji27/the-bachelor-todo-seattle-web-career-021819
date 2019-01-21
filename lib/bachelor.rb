@@ -48,5 +48,5 @@ def get_average_age_for_season(data, season)
       ages << attributes["age"].to_i
     end
   end
-  ages.inject{ |sum, el| sum + el }.to_f / 
+  ages.inject{ |sum, el| sum + el }.to_f / ages.size
 end
