@@ -45,5 +45,8 @@ def get_average_age_for_season(data, season)
   ages = []
   data.each do |season, contestant_array|
     contestant_array.each do |attributes|
-      attributes["age"]
+      ages << attributes["age"].to_i
+    end
+  end
+  
 end
